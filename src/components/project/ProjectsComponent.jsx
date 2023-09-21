@@ -29,9 +29,7 @@ const ProjectsComponent = () => {
   },[htmlskill ,cssskill , jsskill , reactskill , tailwindskill , crudskill])
 
   return (
-    <div id="projects" className="min-h-[90vh] bg-black bg-opacity-[96%] scroll-mt-[5rem] p-[2rem]">
-        
-        <LayoutComponent topic={'Projects'}>
+    <LayoutComponent topic={'Projects'} idcomponent={'projects'} bgopacity={'bg-opacity-[96%]'}>
           {/* Filter Project */}
           <div className=" flex justify-between items-center mb-[2rem]"> 
               {/* Label */}
@@ -97,8 +95,7 @@ const ProjectsComponent = () => {
                 })
               }
           </div>
-        </LayoutComponent>
-    </div>
+    </LayoutComponent>
   )
 }
 

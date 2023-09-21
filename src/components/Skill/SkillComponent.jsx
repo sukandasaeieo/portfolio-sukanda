@@ -5,8 +5,7 @@ import { skillarray } from "./skillarray"
 
 const SkillComponent = () => {
   return (
-    <div id="skills" className=" min-h-[90vh] bg-black bg-opacity-[98%] scroll-mt-[5rem] p-[2rem]">
-      <LayoutComponent topic={'Skill'}>    
+    <LayoutComponent topic={'Skill'} idcomponent={'skills'} bgopacity={'bg-opacity-[98%]'}>    
           {/* Label*/}
           <p className=" text-white pl-[0.5rem] text-opacity-80">These are the Tech Stacks I learned and used in my project.</p>
 
@@ -19,10 +18,9 @@ const SkillComponent = () => {
             })}
           </div>    
 
-      </LayoutComponent>
+    </LayoutComponent>
        
-          
-    </div>
+    
   )
 }
 
