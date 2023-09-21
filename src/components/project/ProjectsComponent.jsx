@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import TopicComponent from "../TopicComponent"
 import CardProject from "./CardProject"
 import { projectarray } from "./projectarray"
-
 // Icon
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
@@ -81,11 +80,12 @@ const ProjectsComponent = () => {
             {
               dataproject?.map((e)=>{
                 return(
-                  <CardProject key={e.id} topic={e.topic} stack={e.stack} responsive={e.responsive} image={e.image} repo={e.repoGithub} linksite={e.linksite}/>
+                  <CardProject key={e.id} {...e}/>
                 )
               })
             }
         </div>
+        
     </div>
   )
 }
