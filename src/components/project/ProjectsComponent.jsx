@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import TopicComponent from "../TopicComponent"
 import CardProject from "./CardProject"
 import { projectarray } from "./projectarray"
 // Icon
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import LayoutComponent from "../LayoutComponent";
 
 
 const ProjectsComponent = () => {
@@ -30,12 +30,13 @@ const ProjectsComponent = () => {
 
   return (
     <div id="projects" className="min-h-[90vh] bg-black bg-opacity-[96%] scroll-mt-[5rem] p-[2rem]">
-        <div className="w-[80%] mx-auto">
-          <TopicComponent topic={'Projects'}/>
-
+        
+        <LayoutComponent topic={'Projects'}>
           {/* Filter Project */}
           <div className=" flex justify-between items-center mb-[2rem]"> 
-          <p className=" text-white pl-[0.5rem] text-opacity-80">These projects belong to me.</p>
+              {/* Label */}
+              <p className=" text-white pl-[0.5rem] text-opacity-80">These projects belong to me.</p>
+              {/* Toggle */}
               <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn m-1">Filter by <MdOutlineKeyboardArrowDown className=" text-[1.5rem]"/></label>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -96,7 +97,7 @@ const ProjectsComponent = () => {
                 })
               }
           </div>
-        </div>
+        </LayoutComponent>
     </div>
   )
 }
