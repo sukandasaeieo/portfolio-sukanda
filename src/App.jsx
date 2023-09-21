@@ -1,6 +1,8 @@
 import AboutComponent from "./components/AboutComponent"
 import NavbarComponent from "./components/NavbarComponent"
 import SkillComponent from "./components/Skill/SkillComponent"
+import ProjectsComponent from "./components/project/ProjectsComponent"
+
 
 
 const App = () => {
@@ -9,6 +11,8 @@ const App = () => {
       <NavbarComponent/>
       <AboutComponent/>
       <SkillComponent/>
+      <ProjectsComponent/>
+
     </div>
   )
 }
