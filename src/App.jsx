@@ -1,5 +1,6 @@
 import AboutComponent from "./components/AboutComponent"
 import NavbarComponent from "./components/NavbarComponent"
+import SkillComponent from "./components/Skill/SkillComponent"
 
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <div data-theme="light">
       <NavbarComponent/>
       <AboutComponent/>
+      <SkillComponent/>
     </div>
   )
 }
