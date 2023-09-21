@@ -12,6 +12,7 @@ const ProjectsComponent = () => {
   const [jsskill,setJsskill] = useState(false)
   const [reactskill,setReactskill] = useState(false)
   const [tailwindskill,setTailwindskill] = useState(false)
+  const [crudskill , setCRUDskill] = useState(false)
 
   const [dataproject , setDataproject] = useState([])
 
@@ -21,71 +22,81 @@ const ProjectsComponent = () => {
     const filterJS = jsskill ? filterCSS.filter((e)=> e.stack.includes("JS")) : filterCSS
     const filterReactJS = reactskill ? filterJS.filter((e)=> e.stack.includes("ReactJS")) : filterJS
     const filterTailwind = tailwindskill ? filterReactJS.filter((e)=> e.stack.includes("Tailwind")) : filterReactJS
+    const filterCRUD = crudskill ? filterTailwind.filter((e)=> e.isCRUD) : filterTailwind
 
-    setDataproject(filterTailwind)
+    setDataproject(filterCRUD)
     
-  },[htmlskill ,cssskill , jsskill , reactskill , tailwindskill])
+  },[htmlskill ,cssskill , jsskill , reactskill , tailwindskill , crudskill])
 
   return (
     <div id="projects" className="min-h-[90vh] bg-black bg-opacity-[96%] scroll-mt-[5rem] p-[2rem]">
-        <TopicComponent topic={'Projects'}/>
+        <div className="w-[80%] mx-auto">
+          <TopicComponent topic={'Projects'}/>
 
-        {/* Filter Project */}
-        <div className=" flex justify-end mb-[2rem]">        
-            <div className="dropdown dropdown-end">
-              <label tabIndex={0} className="btn m-1">Filter by <MdOutlineKeyboardArrowDown className=" text-[1.5rem]"/></label>
-              <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                {/* HTML */}
-                <li>
-                  <section>
-                    <input id="htmlfilter" type='checkbox' value={htmlskill} onChange={()=> setHtmlskill(!htmlskill)}/>
-                    <label htmlFor="htmlfilter">HTML</label>
-                  </section>
-                </li>
-                {/* CSS */}
-                <li>
-                  <section>
-                    <input id="cssfilter" type='checkbox' value={cssskill} onChange={()=> setCssskill(!cssskill)}/>
-                    <label htmlFor="cssfilter">CSS</label>
-                  </section>
-                </li>
-                {/* JS */}
-                <li>
-                  <section>
-                    <input id="jsfilter" type='checkbox' value={jsskill} onChange={()=> setJsskill(!jsskill)}/>
-                    <label htmlFor="jsfilter">JS</label>
-                  </section>
-                </li>
-                {/* React */}
-                <li>
-                  <section>            
-                    <input id="reactjsfilter" type='checkbox' value={reactskill} onChange={()=> setReactskill(!reactskill)}/>
-                    <label htmlFor="reactjsfilter">ReactJS</label>
-                  </section>
-                </li>
-                {/* Tailwind */}
-                <li>
-                  <section>            
-                    <input id="tailwindfilter" type='checkbox' value={tailwindskill} onChange={()=> setTailwindskill(!tailwindskill)}/>
-                    <label htmlFor="tailwindfilter">Tailwind</label>
-                  </section>
-                </li>
+          {/* Filter Project */}
+          <div className=" flex justify-between items-center mb-[2rem]"> 
+          <p className=" text-white pl-[0.5rem] text-opacity-80">These projects belong to me.</p>
+              <div className="dropdown dropdown-end">
+                <label tabIndex={0} className="btn m-1">Filter by <MdOutlineKeyboardArrowDown className=" text-[1.5rem]"/></label>
+                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  {/* HTML */}
+                  <li>
+                    <section>
+                      <input id="htmlfilter" type='checkbox' value={htmlskill} onChange={()=> setHtmlskill(!htmlskill)}/>
+                      <label htmlFor="htmlfilter">HTML</label>
+                    </section>
+                  </li>
+                  {/* CSS */}
+                  <li>
+                    <section>
+                      <input id="cssfilter" type='checkbox' value={cssskill} onChange={()=> setCssskill(!cssskill)}/>
+                      <label htmlFor="cssfilter">CSS</label>
+                    </section>
+                  </li>
+                  {/* JS */}
+                  <li>
+                    <section>
+                      <input id="jsfilter" type='checkbox' value={jsskill} onChange={()=> setJsskill(!jsskill)}/>
+                      <label htmlFor="jsfilter">JS</label>
+                    </section>
+                  </li>
+                  {/* React */}
+                  <li>
+                    <section>            
+                      <input id="reactjsfilter" type='checkbox' value={reactskill} onChange={()=> setReactskill(!reactskill)}/>
+                      <label htmlFor="reactjsfilter">ReactJS</label>
+                    </section>
+                  </li>
+                  {/* Tailwind */}
+                  <li>
+                    <section>            
+                      <input id="tailwindfilter" type='checkbox' value={tailwindskill} onChange={()=> setTailwindskill(!tailwindskill)}/>
+                      <label htmlFor="tailwindfilter">Tailwind</label>
+                    </section>
+                  </li>
+                  {/* CRUD */}
+                  <li>
+                    <section>            
+                      <input id="crudskillfilter" type='checkbox' value={crudskill} onChange={()=> setCRUDskill(!crudskill)}/>
+                      <label htmlFor="crudskillfilter">CRUD</label>
+                    </section>
+                  </li>
 
-              </ul>
-            </div>
+                </ul>
+              </div>
+          </div>
+
+          {/* Card Project*/}
+          <div className=" flex flex-wrap gap-[2rem]   ">            
+              {
+                dataproject?.map((e)=>{
+                  return(
+                    <CardProject key={e.id} {...e}/>
+                  )
+                })
+              }
+          </div>
         </div>
-
-        {/* Card Project*/}
-        <div className=" flex flex-wrap gap-[2rem]  w-[80%] mx-auto ">            
-            {
-              dataproject?.map((e)=>{
-                return(
-                  <CardProject key={e.id} {...e}/>
-                )
-              })
-            }
-        </div>
-        
     </div>
   )
 }
