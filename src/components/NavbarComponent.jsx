@@ -16,7 +16,7 @@ const NavbarComponent = () => {
                 <li className=" hover:bg-[#515a59] "><a href="#">Education</a></li>
                 <li className=" hover:bg-[#515a59] "><a href="#">Experience</a></li>
                 <li className=" hover:bg-[#515a59] "><a href="#skills">Skills</a></li>
-                <li className=" hover:bg-[#515a59] "><a href="#">Projects</a></li>
+                <li className=" hover:bg-[#515a59] "><a href="#projects">Projects</a></li>
                 <li className=" hover:bg-[#515a59] "><a href="#">Contact</a></li>
             </ul>
         </section>
