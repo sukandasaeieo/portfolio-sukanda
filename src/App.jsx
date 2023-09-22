@@ -1,7 +1,7 @@
 
 import AboutComponent from "./components/AboutComponent"
 import ContactComponent from "./components/ContactComponent"
-import EducationComponent from "./components/EducationComponent"
+import EducationComponent from "./components/education/EducationComponent"
 import ExperienceComponent from "./components/ExperienceComponent"
 import IntroComponent from "./components/IntroComponent"
 import NavbarComponent from "./components/NavbarComponent"
