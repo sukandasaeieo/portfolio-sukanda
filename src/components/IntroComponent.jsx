@@ -24,7 +24,7 @@ const IntroComponent = () => {
                                 <h1 className=" text-[3rem] font-bold mb-[0.5rem]">
                                     Fullstack-Developer
                                 </h1>
-                                <p className=" text-[1.2rem]">
+                                <p className=" text-[1.2rem] font-Incluesive-Sans">
                                     Hi, I am 
                                     <span className=" text-yellow-400"> &ldquo;Top&rdquo;</span> or  
                                     <span className=" text-yellow-400"> &ldquo;Siraphob Reanmanorom.&rdquo; </span>

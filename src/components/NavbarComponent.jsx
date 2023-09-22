@@ -2,7 +2,7 @@ import { AiOutlineHome} from "react-icons/ai";
 
 const NavbarComponent = () => {
   return (
-    <nav className=" flex justify-between items-center p-[1rem] pr-[2rem] bg-[#131314] sticky top-0 z-10">
+    <nav className=" flex justify-between items-center p-[1rem] pr-[2rem] bg-[#131314] sticky top-0 z-10 font-Incluesive-Sans">
         {/* Left */}        
         <a href="#" className=" px-[0.5rem] py-[0.2rem] rounded-lg hover:bg-[#515a59] ">
           <AiOutlineHome className=" text-[1.5rem] text-white "/>
