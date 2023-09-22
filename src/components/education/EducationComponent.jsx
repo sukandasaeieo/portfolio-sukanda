@@ -1,5 +1,5 @@
 import LayoutComponent from "../LayoutComponent"
-import EducationLayout from "./educationlayout"
+import EducationLayout from "./Educationlayout"
 
 
 const EducationComponent = () => {
