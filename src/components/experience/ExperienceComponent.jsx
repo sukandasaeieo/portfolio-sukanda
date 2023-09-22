@@ -8,7 +8,7 @@ const ExperienceComponent = () => {
 
       <ExperienceLayout topic1={'Self-Learning FullStack Developer'} topic2={''} durationtime={'Febuary 2023 - July 2023'} addresslearn={'Online , Thailand'}>
         <div className="text-white text-opacity-80 font-Incluesive-Sans pl-[2rem]">
-            <p>- Technical Skills: HTML5 / CSS3 / JS / Boostrap5 / Tailwind / React.js / Node.js / Express.js / MongoDB</p>
+            <p>- Technical Skills: HTML5 / CSS3 / JS / Boostrap5 / Tailwind / ReactJS / NodeJS / ExpressJS / MongoDB / NextJS</p>
             <p>- Challange: Frontend Mentor</p>
         </div>
       </ExperienceLayout>
