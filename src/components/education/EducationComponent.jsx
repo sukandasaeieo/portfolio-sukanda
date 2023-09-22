@@ -23,10 +23,7 @@ const EducationComponent = () => {
             <p className="">Enrichment Program of Science Mathematics Technology and Environment (SMTE)</p>
             <span>2015 - 2018</span>
           </section>
-          <section className=" flex justify-between text-white text-opacity-80">
-            <p className="">Science Math Environment MOU PSU (SME MOU)</p>
-            <span>2013 - 2015</span>
-          </section>
+          
         </div>
       </EducationLayout>
 
