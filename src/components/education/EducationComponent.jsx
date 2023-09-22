@@ -8,8 +8,8 @@ const EducationComponent = () => {
 
       <EducationLayout topic1={'Generation Thailand'} topic2={'Junior Software Developer Booscamp (JSD)'} durationtime={'July 2023 - October 2023'} addresslearn={'Online , Thailand'}>
         <div className="text-white text-opacity-80 font-Incluesive-Sans pl-[2rem]">
-          <p>-Technical Skills: HTML /CSS /JS /ReactJS /NodeJS /ExpressJS /MongoDB /Git /GitHub</p>
-          <p>-Soft Skills: Growth Mindset/ Persistence /Future Orientation /Orientation to Details /Teamwork</p>
+          <p>-Technical Skills: HTML / CSS / JS / ReactJS / NodeJS / ExpressJS / MongoDB / Git / GitHub</p>
+          <p>-Soft Skills: Growth Mindset / Persistence / Future Orientation / Orientation to Details / Teamwork</p>
         </div>
       </EducationLayout>
 
