@@ -8,19 +8,19 @@ const ExperienceComponent = () => {
 
       <ExperienceLayout topic1={'Self-Learning FullStack Developer'} topic2={''} durationtime={'Febuary 2023 - July 2023'} addresslearn={'Online , Thailand'}>
         <div className="text-white text-opacity-80 font-Incluesive-Sans pl-[2rem]">
-            <p>- Technical Skills: HTML5 / CSS3 / JS / Boostrap5 / Tailwind / ReactJS / NodeJS / ExpressJS / MongoDB / NextJS</p>
-            <p>- Challange: Frontend Mentor</p>
+            <p>- Technical Skills: <span className=" ml-[0.5rem]">HTML5 / CSS3 / JS / Boostrap5 / Tailwind / ReactJS / NodeJS / ExpressJS / MongoDB / NextJS</span></p>
+            <p>- Challange: <span className=" ml-[0.5rem]">Frontend Mentor</span></p>
         </div>
       </ExperienceLayout>
 
       <ExperienceLayout topic1={'Self-Learning Game Developer '} topic2={''} durationtime={'May 2022 - February 2023'} addresslearn={'Online , Thailand'}>
         <div className="text-white text-opacity-80 font-Incluesive-Sans pl-[2rem]">
-            <p>- Technical Skills: C# / Unity</p>
-            <p>- Challange: Create Game RPG 3D</p>
+            <p>- Technical Skills: <span className=" ml-[0.5rem]">C# / Unity</span></p>
+            <p>- Challange: <span className=" ml-[0.5rem]">Create Game RPG 3D</span></p>
             <div className=" pl-[2rem]">
               <p>- NPC (Buy / Sell)</p>
               <p>- Player (Move / Inventory / Shortcut F1-F9 / Tap status)</p>
-              <p>- Monster (Spawn / Move / Response attack / Check name)</p>
+              <p>- Monster (Spawn / Move / Response attack / DropItem / Check name)</p>
             </div>
         </div>
       </ExperienceLayout>
