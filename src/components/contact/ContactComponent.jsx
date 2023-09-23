@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import LayoutComponent from "../LayoutComponent"
 import { LuSend } from "react-icons/lu";
 import CardContact from "./CardContact";
@@ -7,15 +7,44 @@ import { HiOutlineMail } from "react-icons/hi";
 import { SiFrontendmentor } from "react-icons/si";
 
 const ContactComponent = () => {
-  const [namevisitor , setNamevisitor] = useState('')
-  const [emailvisitor , setEmailvisitor] = useState('')
-  const [messagevisitor , setMessagevisitor] = useState('')
+  const [namevisitor , setNamevisitor] = useState(''); 
+  const [emailvisitor , setEmailvisitor] = useState('');
+  const [messagevisitor , setMessagevisitor] = useState('');
+
+  const [isclicked , setIscliked] = useState(false);
+  const [sendsuccess , setSendsuccess] = useState(false);
+
+  const refName = useRef();
+  const refEmail = useRef();
+  const refMessage = useRef();
+
+  useEffect(()=>{
+    setIscliked(false)
+    setSendsuccess(false)
+  }, [namevisitor , emailvisitor , messagevisitor])
+
+
+  const CheckInput =() =>{
+    namevisitor ? null : refName.current.focus();    
+    if(namevisitor){
+      emailvisitor ? null : refEmail.current.focus();
+    }
+    if(namevisitor && emailvisitor){
+      messagevisitor ? null : refMessage.current.focus();
+    }
+    if(namevisitor && emailvisitor && messagevisitor){
+      setSendsuccess(true)
+  }
+  }
 
   const submitHandler = (e) =>{
     e.preventDefault()
-    if(namevisitor && emailvisitor && messagevisitor){
-        console.log('send message')
+
+    CheckInput();
+    if(sendsuccess){
+      console.log('send success')
     }
+    
   }
 
   return (
@@ -37,10 +66,11 @@ const ContactComponent = () => {
               </div>
             </section>
 
+            {/* Center */}
             <span className=" w-[10%] text-white text-opacity-70">or</span>
 
             {/* Right */}
-            <section className=" w-[50%]">
+            <section className=" w-[50%]">              
               <form className=" flex flex-col gap-y-[1rem] text-white text-opacity-70" onSubmit={(e)=>submitHandler(e)}>
 
                 {/* Form Top */}
@@ -52,6 +82,7 @@ const ContactComponent = () => {
                     </label>
                     <input  id="contact-name" 
                             type="text" 
+                            ref={refName}
                             placeholder="Name" 
                             className="input input-bordered w-full max-w-xs text-black" 
                             onChange={(e)=>setNamevisitor(e.target.value)}
@@ -66,6 +97,7 @@ const ContactComponent = () => {
                     </label>
                     <input  id="contact-email" 
                             type="text" 
+                            ref={refEmail}
                             placeholder="Email" 
                             className="input input-bordered w-full max-w-xs text-black" 
                             onChange={(e)=>setEmailvisitor(e.target.value)}
@@ -82,16 +114,26 @@ const ContactComponent = () => {
                     <span className="label-text text-white text-[1rem]  text-opacity-70">Your Message</span>
                   </label>
                   <textarea   id="contact-message" 
+                              ref={refMessage}
                               className="textarea textarea-bordered h-24 text-black " 
                               placeholder="Message"
                               onChange={(e)=>setMessagevisitor(e.target.value)}
                               value={messagevisitor}
                   >
-
                   </textarea>
                 </section>
 
-                <button type='submit' className="btn btn-neutral hover:brightness-[170%]  max-w-[200px] normal-case ">Send Message <LuSend className=" text-[1.2rem]"/></button>
+                {/* Button */}
+                <section className=" flex items-center gap-x-[1rem]">
+                <button type='submit' className="btn btn-neutral hover:brightness-[170%]  max-w-[200px] normal-case " onClick={()=>setIscliked(true)}>Send Message <LuSend className=" text-[1.2rem]"/></button>
+                
+                {!isclicked ? null 
+                           : sendsuccess  ? <p className=" text-green-500">The email has been successfully sent.</p>
+                                          : <p className=" text-red-400">Please ensure that you provide all the required information in full.</p>
+                }
+                </section>
+                
+                
               </form>
             </section>
             
