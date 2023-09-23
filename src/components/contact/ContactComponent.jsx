@@ -20,6 +20,10 @@ const ContactComponent = () => {
 
   return (
     <LayoutComponent topic={'Contact'} idcomponent={'contact'} bgopacity={'bg-opacity-[98%]'}>
+        {/* Label */}
+        <p className=" text-white pl-[0.5rem] text-opacity-80 font-Incluesive-Sans">Please feel free to contact me via the provided form or any other available link.</p>
+
+        {/* Contact */}
         <div className=" bg-[#18181b] rounded-2xl p-[1rem] flex justify-between items-center mt-[2rem]  " >
 
             {/* Left */}
