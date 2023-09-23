@@ -30,6 +30,7 @@ const ProjectsComponent = () => {
 
   return (
     <LayoutComponent topic={'Projects'} idcomponent={'projects'} bgopacity={'bg-opacity-[96%]'}>
+
           {/* Filter Project */}
           <div className=" flex justify-between items-center mb-[2rem]"> 
               {/* Label */}
@@ -41,42 +42,42 @@ const ProjectsComponent = () => {
                   {/* HTML */}
                   <li>
                     <section>
-                      <input id="htmlfilter" type='checkbox' value={htmlskill} onChange={()=> setHtmlskill(!htmlskill)}/>
+                      <input id="htmlfilter" type='checkbox' className="checkbox" value={htmlskill} onChange={()=> setHtmlskill(!htmlskill)}/>
                       <label htmlFor="htmlfilter">HTML</label>
                     </section>
                   </li>
                   {/* CSS */}
                   <li>
                     <section>
-                      <input id="cssfilter" type='checkbox' value={cssskill} onChange={()=> setCssskill(!cssskill)}/>
+                      <input id="cssfilter" type='checkbox' className="checkbox"  value={cssskill} onChange={()=> setCssskill(!cssskill)}/>
                       <label htmlFor="cssfilter">CSS</label>
                     </section>
                   </li>
                   {/* JS */}
                   <li>
                     <section>
-                      <input id="jsfilter" type='checkbox' value={jsskill} onChange={()=> setJsskill(!jsskill)}/>
+                      <input id="jsfilter" type='checkbox' className="checkbox" value={jsskill} onChange={()=> setJsskill(!jsskill)}/>
                       <label htmlFor="jsfilter">JS</label>
                     </section>
                   </li>
                   {/* React */}
                   <li>
                     <section>            
-                      <input id="reactjsfilter" type='checkbox' value={reactskill} onChange={()=> setReactskill(!reactskill)}/>
+                      <input id="reactjsfilter" type='checkbox' className="checkbox" value={reactskill} onChange={()=> setReactskill(!reactskill)}/>
                       <label htmlFor="reactjsfilter">ReactJS</label>
                     </section>
                   </li>
                   {/* Tailwind */}
                   <li>
                     <section>            
-                      <input id="tailwindfilter" type='checkbox' value={tailwindskill} onChange={()=> setTailwindskill(!tailwindskill)}/>
+                      <input id="tailwindfilter" type='checkbox' className="checkbox" value={tailwindskill} onChange={()=> setTailwindskill(!tailwindskill)}/>
                       <label htmlFor="tailwindfilter">Tailwind</label>
                     </section>
                   </li>
                   {/* CRUD */}
                   <li>
                     <section>            
-                      <input id="crudskillfilter" type='checkbox' value={crudskill} onChange={()=> setCRUDskill(!crudskill)}/>
+                      <input id="crudskillfilter" type='checkbox' className="checkbox" value={crudskill} onChange={()=> setCRUDskill(!crudskill)}/>
                       <label htmlFor="crudskillfilter">CRUD</label>
                     </section>
                   </li>
@@ -86,7 +87,7 @@ const ProjectsComponent = () => {
           </div>
 
           {/* Card Project*/}
-          <div className=" flex flex-wrap gap-[2rem]   ">            
+          <div className=" flex flex-wrap gap-[2rem] min-h-[400px]   ">            
               {
                 dataproject?.map((e)=>{
                   return(
