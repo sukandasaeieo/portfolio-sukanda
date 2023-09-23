@@ -4,7 +4,7 @@ const NavbarComponent = () => {
   return (
     <nav className="bg-[#131314] sticky top-0 z-10 font-Incluesive-Sans">
         {/* Desktop version */}
-        <section className=" hidden lg:flex justify-between items-center p-[1rem] pr-[2rem] ">
+        <section className=" hidden lg:flex justify-between items-center  pr-[2rem] ">
             {/* Left */}        
             <a href="#" className=" px-[0.5rem] py-[0.2rem] rounded-lg hover:bg-[#515a59] ">
               <AiOutlineHome className=" text-[1.5rem] text-white "/>
