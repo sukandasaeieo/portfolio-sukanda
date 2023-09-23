@@ -2,7 +2,7 @@
 
 const LayoutComponent = ({children ,topic , idcomponent , bgopacity}) => {
   return (
-    <section id={idcomponent} className={`min-h-[90vh] bg-black ${bgopacity} scroll-mt-[4rem] p-[2rem]`}>
+    <section id={idcomponent} className={` bg-black ${bgopacity} scroll-mt-[4rem] p-[2rem]`}>
         <div className="w-[80%] mx-auto">
 
             {/* Topic */}
