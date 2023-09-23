@@ -5,6 +5,13 @@ import ExperienceLayout from "./ExperienceLayout"
 const ExperienceComponent = () => {
   return (
     <LayoutComponent topic={'Experience'} idcomponent={'experience'} bgopacity={'bg-opacity-[96%]'}>
+      
+
+      <ExperienceLayout topic1={'Generation Thailand'} topic2={''} durationtime={'July 2023 - October 2023'} addresslearn={'Online , Thailand'}>
+        <div className="text-white text-opacity-80 font-Incluesive-Sans pl-[2rem]">
+            <p>- Challange: <span className=" ml-[0.5rem]">Colmar Academy / Find your hat / React Assessment</span></p>
+        </div>
+      </ExperienceLayout>
 
       <ExperienceLayout topic1={'Self-Learning FullStack Developer'} topic2={''} durationtime={'Febuary 2023 - July 2023'} addresslearn={'Online , Thailand'}>
         <div className="text-white text-opacity-80 font-Incluesive-Sans pl-[2rem]">
