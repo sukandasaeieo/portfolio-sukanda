@@ -7,19 +7,22 @@ const ExperienceLayout = (props) => {
         <div className=" flex justify-between text-white     font-Incluesive-Sans">
             {/* Left */}
             <section >
-              <h3 className=" text-[1.4rem] font-bold">{topic1}</h3>
-              { topic2 != ''    ? <h4 className=" text-[1rem] text-yellow-400 text-opacity-90">{topic2}</h4> 
+              <h3 className=" text-[1.2rem] lg:text-[1.4rem] font-bold">{topic1}</h3>
+              { topic2 != ''    ? <h4 className="text-[0.9rem] lg:text-[1rem] text-yellow-400 text-opacity-90">{topic2}</h4> 
                                 : <h4 className=" hidden"></h4>
               } 
             </section>
 
             {/* Right */}
-           <section className=" text-end text-[1rem] text-white text-opacity-80">
+           <section className=" hidden lg:block text-end text-[1rem] text-white text-opacity-80">
               <p>{durationtime}</p>
               <p>{addresslearn}</p>
            </section>
         </div>
-        {children}
+        <div className="text-white text-opacity-80 font-Incluesive-Sans lg:pl-[2rem] text-[0.9rem] lg:text-[1rem]">
+          {children}
+        </div>
+        
     </section>
   )
 }
