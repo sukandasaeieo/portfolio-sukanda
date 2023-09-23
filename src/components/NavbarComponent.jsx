@@ -24,7 +24,7 @@ const NavbarComponent = () => {
         </section>
 
         {/* Mobile version */}
-        <section className="navbar text-white lg:hidden px-[1rem]">
+        <section className="navbar text-white lg:hidden py-0  px-[1rem]">
 
               {/* Left */}
               <div className="flex-1">
