@@ -28,7 +28,7 @@ const NavbarComponent = () => {
 
               {/* Left */}
               <div className="flex-1">
-                <a href="#" className=" px-[0.5rem] py-[0.2rem] rounded-lg hover:bg-[#515a59] ">
+                <a href="#" className=" px-[0.5rem] py-[0.2rem] rounded-lg active:bg-[#515a59] ">
                   <AiOutlineHome className=" text-[1.5rem] text-white "/>
                 </a>
               </div>
@@ -38,7 +38,7 @@ const NavbarComponent = () => {
                 <ul className="menu menu-horizontal px-1 ">
                   <li >
                     <details>
-                      <summary className=" text-white text-[1.5rem] hover:bg-[#515a59] hover:text-white">
+                      <summary className=" text-white text-[1.5rem] active:bg-[#515a59] hover:text-white">
                         <HiMenu/>
                       </summary>
                       <ul className=" bg-[#131314] list-none [&>li]:px-[0.5rem] [&>li]:py-[0.2rem] [&>li]:rounded-lg  [&>li>a]:hover:text-white  text-white right-0 ">
