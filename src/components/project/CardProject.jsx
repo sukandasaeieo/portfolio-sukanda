@@ -6,11 +6,10 @@ const CardProject = (props) => {
     const {topic , stack , responsive , image , isgif , repoGithub ,linksite} = props
   return (
     <section className=' p-[1rem]  bg-[#18181b] bg-opacity-100 rounded-lg'>
-        <a href={linksite} target="_blank" rel="noopener noreferrer">
-            <div className=" w-[300px] h-[200px]  bg-white overflow-hidden rounded-lg ">
+        <div className=" w-[300px] h-[200px]  bg-white overflow-hidden rounded-lg ">
                 <img src={image} alt={image} className={isgif ?' h-full' :' hover:translate-y-[-50%] hover:cursor-pointer delay-150 duration-[3000ms] ease-in-out'} />
-            </div>
-        </a>
+        </div>
+        
         <div className=' w-full h-[200px] text-white mt-[1rem]'>
 
             {/* Topic */}
