@@ -10,7 +10,7 @@ const SkillComponent = () => {
           <p className=" text-white pl-[0.5rem] text-opacity-80 font-Incluesive-Sans">These are the Tech Stacks I learned and used in my project.</p>
 
           {/* Skills */}
-          <div className=" flex flex-wrap gap-[1rem]    mt-[2rem] ">
+          <div className=" flex flex-wrap justify-center lg:justify-start  gap-[1rem]  mt-[2rem] ">
             {skillarray.map((e)=>{
               return(
                 <CardSkill key={e.id} image = {e.image}  programLanguage={e.text}/>
