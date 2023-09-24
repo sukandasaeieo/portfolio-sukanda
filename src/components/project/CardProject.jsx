@@ -16,7 +16,7 @@ const CardProject = (props) => {
             <h2 className=' text-center text-[1rem] lg:text-[1.2rem]'>{topic}</h2>
 
             {/* Stack & Resposive */}
-            <div className=' pt-[1rem] text-center text-[0.9rem] lg:text-[1rem]'>
+            <div className=' pt-[0.2rem] lg:pt-[1rem] text-center text-[0.9rem] lg:text-[1rem]'>
                 <p className=''>Stack: <span className=' text-white text-opacity-70'>{stack.join(' , ')}</span></p>
                 <p>Responsive: <span className=' text-white text-opacity-70'>{responsive.join(' , ')}</span></p>
             </div>  
