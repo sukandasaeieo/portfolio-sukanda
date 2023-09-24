@@ -126,7 +126,7 @@ const ContactComponent = () => {
                 </section>
 
                 {/* Button */}
-                <section className=" flex flex-col sm:flex-row sm:items-center gap-x-[1rem] gap-y-[0.5rem] sm:gap-y-0">
+                <section className=" flex flex-col sm:flex-row sm:items-center gap-x-[1rem] gap-y-[0.5rem] sm:gap-y-0 text-[0.9rem] sm:text-[1rem]">
                 <button type='submit' className="btn btn-neutral hover:brightness-[170%]  max-w-[200px] normal-case mt-[1rem] sm:mt-0" onClick={()=>setIscliked(true)}>Send Message <LuSend className=" text-[1.2rem]"/></button>
                 
                 {!isclicked ? null 
