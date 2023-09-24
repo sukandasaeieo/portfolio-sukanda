@@ -32,11 +32,11 @@ const ProjectsComponent = () => {
     <LayoutComponent topic={'Projects'} idcomponent={'projects'} bgopacity={'bg-opacity-[96%]'}>
 
           {/* Filter Project */}
-          <div className=" flex justify-between items-center mb-[2rem]"> 
+          <div className=" flex flex-col lg:flex-row lg:justify-between lg:items-center mb-[2rem]"> 
               {/* Label */}
               <p className=" text-white pl-[0.5rem] text-opacity-80 font-Incluesive-Sans">To view projects created with a specific technical stack, simply press the &ldquo;FILTER BY&rdquo; button.</p>
               {/* Toggle */}
-              <div className="dropdown dropdown-end">
+              <div className="dropdown dropdown-end self-end lg:self-auto mt-[1rem] lg:mt-0">
                 <label tabIndex={0} className="btn m-1 font-Incluesive-Sans">Filter by <MdOutlineKeyboardArrowDown className=" text-[1.5rem]"/></label>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                   {/* HTML */}
@@ -87,7 +87,7 @@ const ProjectsComponent = () => {
           </div>
 
           {/* Card Project*/}
-          <div className=" flex flex-wrap gap-[2rem] min-h-[400px]   ">            
+          <div className=" flex flex-wrap justify-center lg:justify-start gap-[2rem] min-h-[400px]   ">            
               {
                 dataproject?.map((e)=>{
                   return(
