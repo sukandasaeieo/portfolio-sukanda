@@ -7,7 +7,7 @@ const SkillComponent = () => {
   return (
     <LayoutComponent topic={'Skill'} idcomponent={'skills'} bgopacity={'bg-opacity-[98%]'}>    
           {/* Label*/}
-          <p className=" text-white pl-[0.5rem] text-opacity-80 font-Incluesive-Sans">These are the Tech Stacks I learned and used in my project.</p>
+          <p className=" text-white text-[0.9rem] lg:text-[1rem]  text-opacity-80 font-Incluesive-Sans pl-[0.5rem]">These are the Tech Stacks I learned and used in my project.</p>
 
           {/* Skills */}
           <div className=" flex flex-wrap justify-center lg:justify-start  gap-[1rem]  mt-[2rem] ">
