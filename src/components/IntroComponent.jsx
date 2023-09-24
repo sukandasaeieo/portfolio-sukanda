@@ -28,7 +28,7 @@ const IntroComponent = () => {
                                     Hi, I am 
                                     <span className=" text-yellow-400"> &ldquo;Top&rdquo;</span> or  
                                     <span className=" text-yellow-400"> &ldquo;Siraphob Reanmanorom.&rdquo; </span>
-                                     a recent graduate in the field of Mechatronics engineering. I love coding and find it enjoyable.
+                                     a graduate in the field of Mechatronics engineering. I love coding and find it enjoyable.
                                 </p>
                             </div>
                         </section>            
