@@ -58,7 +58,7 @@ const ContactComponent = () => {
             {/* Left */}
             <section className=" sm:w-[40%] flex justify-center">
               <div className=" flex flex-col gap-y-[1rem]">
-                <span className=" text-center text-white text-opacity-70">Contact by</span>
+                <span className=" text-center text-white text-opacity-70 hidden sm:block">Contact by</span>
                 <div className=" flex sm:flex-col sm:gap-y-[1rem] gap-x-[1rem] sm:gap-x-0">
                 <CardContact icon={<BsLinkedin className=" text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Linkedin'} linktarget={'https://www.linkedin.com/in/siraphob-reanmanorom/'}/>
                 <CardContact icon={<HiOutlineMail className="text-[1.5rem] sm:text-[1.1rem]"/>} nameicon={'Email'} linktarget={'mailto:siraphobtop95@gmail.com?subject=contact from Portfolio Siraphob'}/>
@@ -72,13 +72,13 @@ const ContactComponent = () => {
             <span className=" sm:w-[10%] text-white text-opacity-70">or</span>
 
             {/* Right */}
-            <section className=" sm:w-[50%]">              
-              <form className=" flex flex-col gap-y-[1rem] text-white text-opacity-70" onSubmit={(e)=>submitHandler(e)}>
+            <section className=" w-full sm:w-[50%]">              
+              <form className=" flex flex-col sm:gap-y-[1rem] text-white text-opacity-70" onSubmit={(e)=>submitHandler(e)}>
 
                 {/* Form Top */}
-                <section className=" flex gap-x-[1rem] text-[0.9rem] sm:text-[1rem] ">
+                <section className=" flex flex-col sm:flex-row sm:gap-x-[1rem] text-[0.9rem] sm:text-[1rem] ">
                   {/* Input Left */}
-                  <section className="form-control w-full max-w-xs">
+                  <section className="form-control w-full ">
                     <label htmlFor="contact-name" className="label">
                       <span className="label-text text-white text-opacity-70">Your name</span>
                     </label>
@@ -93,7 +93,7 @@ const ContactComponent = () => {
                   </section>
 
                   {/* Input Right */}
-                  <section className="form-control w-full max-w-xs">
+                  <section className="form-control w-full ">
                     <label htmlFor="contact-email" className="label">
                       <span className="label-text text-white text-opacity-70">Your email</span>
                     </label>
@@ -127,7 +127,7 @@ const ContactComponent = () => {
 
                 {/* Button */}
                 <section className=" flex flex-col sm:flex-row sm:items-center gap-x-[1rem] gap-y-[0.5rem] sm:gap-y-0">
-                <button type='submit' className="btn btn-neutral hover:brightness-[170%]  max-w-[200px] normal-case  " onClick={()=>setIscliked(true)}>Send Message <LuSend className=" text-[1.2rem]"/></button>
+                <button type='submit' className="btn btn-neutral hover:brightness-[170%]  max-w-[200px] normal-case mt-[1rem] sm:mt-0" onClick={()=>setIscliked(true)}>Send Message <LuSend className=" text-[1.2rem]"/></button>
                 
                 {!isclicked ? null 
                            : sendsuccess  ? <p className=" text-green-500">The email has been successfully sent.</p>
