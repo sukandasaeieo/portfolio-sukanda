@@ -34,7 +34,7 @@ const ProjectsComponent = () => {
           {/* Filter Project */}
           <div className=" flex flex-col lg:flex-row lg:justify-between lg:items-center mb-[2rem]"> 
               {/* Label */}
-              <p className=" text-white pl-[0.5rem] text-opacity-80 font-Incluesive-Sans">To view projects created with a specific technical stack, simply press the &ldquo;FILTER BY&rdquo; button.</p>
+              <p className=" text-white text-[0.9rem] lg:text-[1rem] pl-[0.5rem] text-opacity-80 font-Incluesive-Sans">To view projects created with a specific technical stack, simply press the &ldquo;FILTER BY&rdquo; button.</p>
               {/* Toggle */}
               <div className="dropdown dropdown-end self-end lg:self-auto mt-[1rem] lg:mt-0">
                 <label tabIndex={0} className="btn m-1 font-Incluesive-Sans">Filter by <MdOutlineKeyboardArrowDown className=" text-[1.5rem]"/></label>
