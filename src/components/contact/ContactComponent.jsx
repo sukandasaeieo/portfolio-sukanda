@@ -52,7 +52,7 @@ const ContactComponent = () => {
 }
 
   const sendEmail = async () => {
-  const url = 'http://localhost:3500/sendmail'
+  const url = 'https://portfoliobackend-1xjn.onrender.com/sendmail'
 
     const objsend = {
       namevisitor , 
