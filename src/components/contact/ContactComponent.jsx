@@ -62,7 +62,8 @@ const ContactComponent = () => {
     setIsSending(true);
     try {
       const response = await axios.post( url , objsend)
-      if(response.statusText === 'OK'){
+     
+      if(response.status === 200){
         setIsSending(false);
         setSendSuccess(true);      
       }
