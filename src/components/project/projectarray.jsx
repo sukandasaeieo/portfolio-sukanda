@@ -6,8 +6,8 @@ import image5_Insure from '../../image/projects/Insure landing page.png'
 import image6_Huddle from '../../image/projects/Huddle landing page.png'
 import image7_Fylodarktheme from '../../image/projects/Fylo dark theme landing page.png'
 import image8_Colma from '../../image/projects/Colmar-Academy.png'
-import image9_Findyourhat from '../../image/projects/findyourhat.gif'
-import image10_ReactAssessmet from '../../image/projects/ReactAssessmet.gif'
+import video9_ReactAssessmet from '../../image/projects/VideoFind your hat.mp4'
+import video10_ReactAssessmet from '../../image/projects/VideoReact Assessment.mp4'
 
 
 export const projectarray = [
@@ -17,6 +17,7 @@ export const projectarray = [
         responsive:['Desktop' ,'Mobile'],
         image:image1_Sunnyside ,
         isgif:false,
+        isvideo:false,
         isCRUD:false,
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/frontend_mentor/tree/main/Challange7_sunnyside-agency-landing-page-main' ,
@@ -28,6 +29,7 @@ export const projectarray = [
         responsive:['Desktop' ,'Mobile'],
         image:image2_Loopstudios ,
         isgif:false,
+        isvideo:false,
         isCRUD:false,
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Loopstudios-landing-page' ,
@@ -39,6 +41,7 @@ export const projectarray = [
         responsive:['Desktop' ,'Mobile'],
         image:image3_Clipboard ,
         isgif:false,
+        isvideo:false,
         isCRUD:false,
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Clipboard-landing-page-master' ,
@@ -50,6 +53,7 @@ export const projectarray = [
         responsive:['Desktop' ,'Mobile'],
         image:image4_Crowdfunding ,
         isgif:false,
+        isvideo:false,
         isCRUD:false,
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Crowdfunding-product-page-main' ,
@@ -61,6 +65,7 @@ export const projectarray = [
         responsive:['Desktop' ,'Mobile'],
         image:image5_Insure ,
         isgif:false,
+        isvideo:false,
         isCRUD:false,
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Insure-landing-page-master' ,
@@ -72,6 +77,7 @@ export const projectarray = [
         responsive:['Desktop' ,'Mobile'],
         image:image6_Huddle,
         isgif:false,
+        isvideo:false,
         isCRUD:false,
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Huddle' ,
@@ -83,6 +89,7 @@ export const projectarray = [
         responsive:['Desktop' ,'Mobile'],
         image:image7_Fylodarktheme,
         isgif:false,
+        isvideo:false,
         isCRUD:false,
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Fylo-dark-theme-landing-page' ,
@@ -94,6 +101,7 @@ export const projectarray = [
         responsive:['Desktop' ,'Mobile'],
         image:image8_Colma,
         isgif:false,
+        isvideo:false,
         isCRUD:false,
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Colmar-Academy' ,
@@ -103,8 +111,9 @@ export const projectarray = [
         topic:'Find your hat',
         stack:['JS'],
         responsive:['Desktop'],
-        image:image9_Findyourhat,
-        isgif:true,
+        image:video9_ReactAssessmet,
+        isgif:false,
+        isvideo:true,
         isCRUD:false,
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Find-your-hat' ,
@@ -114,8 +123,9 @@ export const projectarray = [
         topic:'React Assessment',
         stack:['ReactJS' ,'Vite' ,'Tailwind'],
         responsive:['Desktop'],
-        image:image10_ReactAssessmet,
+        image:video10_ReactAssessmet,
         isgif:true,
+        isvideo:true,
         isCRUD:true,
         isAPI:false,
         repoGithub:'https://github.com/Siraphob1/career-changer-react-assessment' ,
