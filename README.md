@@ -1,5 +1,5 @@
-# React + Vite
-This project was created using React and Vite.
+# Portfolio Frontend
+This project was created using ReactJS and Vite.
 
 ## Link
 - [PortFrontend](https://portfolio-siraphob.vercel.app)
@@ -13,8 +13,10 @@ This project was created using React and Vite.
 [Hack Coding GIF By Matthew Butler](https://giphy.com/gifs/screen-monitor-closeup-26tn33aiTi1jkl6H6)
 
 ## Icon
-[iconweb](https://www.flaticon.com/)
-[react-icon](https://react-icons.github.io/react-icons)
+- [flaticon](https://www.flaticon.com/)  
+- [devicon](https://devicon.dev/)  
+- [freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=Programming+Language+&query=Programming+Language+&type=icon)  
+- [react-icon](https://react-icons.github.io/react-icons)
 
 ## Image
 [notebook](https://cdn.pixabay.com/photo/2015/09/05/22/33/office-925806_1280.jpg)
