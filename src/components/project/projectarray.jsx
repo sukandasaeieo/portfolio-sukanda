@@ -18,6 +18,7 @@ export const projectarray = [
         image:image1_Sunnyside ,
         isgif:false,
         isCRUD:false,
+        isAPI:false,
         repoGithub:'https://github.com/Siraphob1/frontend_mentor/tree/main/Challange7_sunnyside-agency-landing-page-main' ,
         linksite:'https://6472d53ace7473732e3ac545--mellow-parfait-2a0095.netlify.app/'
     },
@@ -28,6 +29,7 @@ export const projectarray = [
         image:image2_Loopstudios ,
         isgif:false,
         isCRUD:false,
+        isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Loopstudios-landing-page' ,
         linksite:'https://648805f21652ff6534d76ff7--inquisitive-queijadas-07563e.netlify.app/'
     },
@@ -38,6 +40,7 @@ export const projectarray = [
         image:image3_Clipboard ,
         isgif:false,
         isCRUD:false,
+        isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Clipboard-landing-page-master' ,
         linksite:'https://64830d95c5099d1475877c86--jade-paprenjak-0fd99e.netlify.app/'
     },
@@ -48,6 +51,7 @@ export const projectarray = [
         image:image4_Crowdfunding ,
         isgif:false,
         isCRUD:false,
+        isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Crowdfunding-product-page-main' ,
         linksite:'https://64816af96204ab2600d12ed2--tranquil-sprinkles-7bc803.netlify.app/'
     },
@@ -58,6 +62,7 @@ export const projectarray = [
         image:image5_Insure ,
         isgif:false,
         isCRUD:false,
+        isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Insure-landing-page-master' ,
         linksite:'https://64898651aa90f2008a1bedfb--idyllic-hotteok-9362b9.netlify.app/'
     },
@@ -68,6 +73,7 @@ export const projectarray = [
         image:image6_Huddle,
         isgif:false,
         isCRUD:false,
+        isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Huddle' ,
         linksite:'https://648c2c841ebecc529add5c81--hilarious-sfogliatella-7cd043.netlify.app/'
     },
@@ -78,6 +84,7 @@ export const projectarray = [
         image:image7_Fylodarktheme,
         isgif:false,
         isCRUD:false,
+        isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Fylo-dark-theme-landing-page' ,
         linksite:'https://64956d1ee032e5146a130471--polite-sfogliatella-bfaffd.netlify.app/'
     },
@@ -88,6 +95,7 @@ export const projectarray = [
         image:image8_Colma,
         isgif:false,
         isCRUD:false,
+        isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Colmar-Academy' ,
         linksite:'https://colmar-academy-7252t2ua5-siraphob1.vercel.app/'
     },
@@ -98,6 +106,7 @@ export const projectarray = [
         image:image9_Findyourhat,
         isgif:true,
         isCRUD:false,
+        isAPI:false,
         repoGithub:'https://github.com/Siraphob1/Find-your-hat' ,
         linksite:'https://replit.com/@Siraphob2541/39SiraphobTopthpjsd5-find-your-hat#'
     },
@@ -108,6 +117,7 @@ export const projectarray = [
         image:image10_ReactAssessmet,
         isgif:true,
         isCRUD:true,
+        isAPI:false,
         repoGithub:'https://github.com/Siraphob1/career-changer-react-assessment' ,
         linksite:'https://siraphob-react-assessment.vercel.app/'
     }

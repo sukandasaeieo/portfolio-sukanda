@@ -1,18 +1,19 @@
-import { useEffect, useState } from "react"
-import CardProject from "./CardProject"
-import { projectarray } from "./projectarray"
+import { useEffect, useState } from "react";
+import CardProject from "./CardProject";
+import { projectarray } from "./projectarray";
 // Icon
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import LayoutComponent from "../LayoutComponent";
 
 
 const ProjectsComponent = () => {
-  const [htmlskill,setHtmlskill] = useState(false)
-  const [cssskill,setCssskill] = useState(false)
-  const [jsskill,setJsskill] = useState(false)
-  const [reactskill,setReactskill] = useState(false)
-  const [tailwindskill,setTailwindskill] = useState(false)
-  const [crudskill , setCRUDskill] = useState(false)
+  const [htmlskill,setHtmlskill] = useState(false);
+  const [cssskill,setCssskill] = useState(false);
+  const [jsskill,setJsskill] = useState(false);
+  const [reactskill,setReactskill] = useState(false);
+  const [tailwindskill,setTailwindskill] = useState(false);
+  const [crudskill , setCRUDskill] = useState(false);
+  const [apiskill , setAPIskill] = useState(false);
 
   const [dataproject , setDataproject] = useState([])
 
@@ -23,10 +24,10 @@ const ProjectsComponent = () => {
     const filterReactJS = reactskill ? filterJS.filter((e)=> e.stack.includes("ReactJS")) : filterJS
     const filterTailwind = tailwindskill ? filterReactJS.filter((e)=> e.stack.includes("Tailwind")) : filterReactJS
     const filterCRUD = crudskill ? filterTailwind.filter((e)=> e.isCRUD) : filterTailwind
-
-    setDataproject(filterCRUD)
+    const filterAPI = apiskill ? filterCRUD.filter((e)=> e.isAPI) : filterCRUD
+    setDataproject(filterAPI)
     
-  },[htmlskill ,cssskill , jsskill , reactskill , tailwindskill , crudskill])
+  },[htmlskill ,cssskill , jsskill , reactskill , tailwindskill , crudskill , apiskill])
 
   return (
     <LayoutComponent topic={'Projects'} idcomponent={'projects'} bgopacity={'bg-opacity-[96%]'}>
@@ -79,6 +80,13 @@ const ProjectsComponent = () => {
                     <section>            
                       <input id="crudskillfilter" type='checkbox' className="checkbox" value={crudskill} onChange={()=> setCRUDskill(!crudskill)}/>
                       <label htmlFor="crudskillfilter">CRUD</label>
+                    </section>
+                  </li>
+                  {/* API */}
+                  <li>
+                    <section>            
+                      <input id="apiskillfilter" type='checkbox' className="checkbox" value={apiskill} onChange={()=> setAPIskill(!apiskill)}/>
+                      <label htmlFor="apiskillfilter">API</label>
                     </section>
                   </li>
 
