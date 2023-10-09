@@ -158,7 +158,7 @@ const ContactComponent = () => {
                 {/* Show result */}
                 {!isclicked ? null 
                            : !completeFill  ? <p className=" text-red-400">Please ensure that you provide all the required information in full.</p>
-                                            : isSending  ? <p className="flex items-center">sending <span className="loading loading-dots loading-xs ml-[0.5rem]"></span></p>
+                                            : isSending  ? <p className="flex items-center gap-x-[0.5rem]">sending <span className="loading loading-spinner text-success"></span></p>
                                                           : !sendSuccess  ? <p className=" text-red-400">The attempt to send an email has failed.</p>
                                                                           : <p className=" text-green-500">The email has been successfully sent.</p>
                                            
