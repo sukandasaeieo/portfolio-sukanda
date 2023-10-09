@@ -11,7 +11,7 @@ const EducationComponent = () => {
           <p>-Technical Skills: <span className=" ml-[0.7rem] ">HTML / CSS / JS / ReactJS / NodeJS / ExpressJS / MongoDB / Git / GitHub</span></p>
           <div className=" mt-[1rem] lg:mt-0 lg:flex">
             <p className=" inline">-Soft Skills:</p>            
-            <p className=" inline ml-[0.7rem] max-w-[580px]">Growth Mindset / Future Orientation / Persistence / Personal Responsibility / Time Management / Teamwork / Orientation to Detail / Proactiveness</p>
+            <p className=" inline ml-[0.7rem] max-w-[580px]">Growth Mindset / Persistence / Teamwork / Proactiveness</p>
           </div>
         </div>
       </EducationLayout>
