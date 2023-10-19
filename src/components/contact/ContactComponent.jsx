@@ -84,11 +84,11 @@ const ContactComponent = () => {
         {/* Contact */}
         <div className=" bg-[#18181b] rounded-2xl p-[1rem] flex flex-col-reverse sm:flex-row sm:justify-between items-center mt-[2rem] gap-y-[1rem] sm:gap-y-0  " >
 
-            {/* Contact Left */}
+            {/* Left Contact link  */}
             <section className=" sm:w-[40%] flex justify-center">
               <div className=" flex flex-col gap-y-[1rem]">
                 <span className=" text-center text-white text-opacity-70 hidden sm:block">Contact by</span>
-                <div className=" flex sm:flex-col sm:gap-y-[1rem] gap-x-[1rem] sm:gap-x-0">
+                <div className=" flex flex-wrap justify-center sm:justify-start sm:flex-col gap-y-[1rem] gap-x-[1rem] sm:gap-x-0">
                 <CardContact icon={<BsLinkedin className=" text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Linkedin'} linktarget={'https://www.linkedin.com/in/siraphob-reanmanorom/'}/>
                 <CardContact icon={<HiOutlineMail className="text-[1.5rem] sm:text-[1.1rem]"/>} nameicon={'Email'} linktarget={'mailto:siraphobtop95@gmail.com?subject=contact from Portfolio Siraphob'}/>
                 <CardContact icon={<BsGithub className=" text-[1.4rem] sm:text-[1.1rem]"/>} nameicon={'GitHub'} linktarget={'https://github.com/Siraphob1'}/>
@@ -98,10 +98,10 @@ const ContactComponent = () => {
               </div>
             </section>
 
-            {/* Contact Center */}
+            {/* Center Contact  */}
             <span className=" sm:w-[10%] text-white text-opacity-70">or</span>
 
-            {/* Contact Right */}
+            {/* Right Contact input */}
             <section className=" w-full sm:w-[50%]">              
               <form className=" flex flex-col sm:gap-y-[1rem] text-white text-opacity-70" onSubmit={(e)=>submitHandler(e)}>
 
@@ -116,7 +116,7 @@ const ContactComponent = () => {
                             type="text" 
                             ref={refName}
                             placeholder="Name" 
-                            className="input input-bordered w-full max-w-xs text-black text-[0.85rem] sm:text-[1rem]" 
+                            className="input input-bordered w-full text-black text-[0.85rem] sm:text-[1rem] border" 
                             onChange={(e)=>setNamevisitor(e.target.value)}
                             value={namevisitor}
                             />
@@ -131,7 +131,7 @@ const ContactComponent = () => {
                             type="text" 
                             ref={refEmail}
                             placeholder="Email" 
-                            className="input input-bordered w-full max-w-xs text-black text-[0.85rem] sm:text-[1rem]" 
+                            className="input input-bordered w-full  text-black text-[0.85rem] sm:text-[1rem]" 
                             onChange={(e)=>setEmailvisitor(e.target.value)}
                             value={emailvisitor}
                             />
