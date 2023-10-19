@@ -5,6 +5,7 @@ import CardContact from "./CardContact";
 import { BsLinkedin ,BsGithub } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { SiFrontendmentor } from "react-icons/si";
+import { TbReportSearch } from "react-icons/tb";
 import axios from "axios";
 
 const ContactComponent = () => {
@@ -92,6 +93,7 @@ const ContactComponent = () => {
                 <CardContact icon={<HiOutlineMail className="text-[1.5rem] sm:text-[1.1rem]"/>} nameicon={'Email'} linktarget={'mailto:siraphobtop95@gmail.com?subject=contact from Portfolio Siraphob'}/>
                 <CardContact icon={<BsGithub className=" text-[1.4rem] sm:text-[1.1rem]"/>} nameicon={'GitHub'} linktarget={'https://github.com/Siraphob1'}/>
                 <CardContact icon={<SiFrontendmentor className="text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Frontend Mentor'} linktarget={'https://www.frontendmentor.io/profile/Siraphob1'}/>
+                <CardContact icon={<TbReportSearch className="text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Resume'} linktarget={'https://www.canva.com/design/DAFtFu-6wlE/o5644MlmDumnrkagwFoyRg/edit?utm_content=DAFtFu-6wlE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'}/>
                 </div>
               </div>
             </section>
