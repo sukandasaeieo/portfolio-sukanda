@@ -33,14 +33,15 @@ const ExperienceComponent = () => {
              and Forward kinematic
         </p>        
       </ExperienceLayout>
-
-      <ExperienceLayout topic1={'Prince of Songkla University'} topic2={'[2020]'} durationtime={''} addresslearn={'Songkla , Thailand'}>
+      
+      {/* Prince of Songkla University */}
+      <ExperienceLayout topic1={'Extracurricular activity'} topic2={'[2020] Prince of Songkla University'} durationtime={''} addresslearn={'Songkla , Thailand'}>
         <p>- Inventing a Land leveling Robot &ldquo; 2020 Smart Agricultural Robot Contest &rdquo;</p>           
         <p>- President of a PSU Shooting Club.</p>           
         <p>- Collaborated with Student Organization - Administrative Organization in the event &ldquo; Opening the world of activities &rdquo; and &ldquo; ASEAN night &rdquo;</p>           
       </ExperienceLayout>
 
-      <ExperienceLayout topic1={''} topic2={'[2019]'} durationtime={''} addresslearn={'Songkla , Thailand'}>
+      <ExperienceLayout topic1={''} topic2={'[2019] Prince of Songkla University'} durationtime={''} addresslearn={'Songkla , Thailand'}>
         <p>- Planning a Shooting club activity project.</p>           
         <p>- A staff member in an orientation event for a new student at the university -Staff in the basic shooting training project</p>           
         <p>- A staff member of PSU Robotics Competition 2019 that included line following robot and Sumo robot in the event Engineering Funfair</p>           
