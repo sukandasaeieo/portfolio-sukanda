@@ -4,7 +4,7 @@ import ExperienceLayout from "./ExperienceLayout"
 
 const ExperienceComponent = () => {
   return (
-    <LayoutComponent topic={'Experience'} idcomponent={'experience'} bgopacity={'bg-opacity-[94%]'}>
+    <LayoutComponent topic={'Experience'} idcomponent={'experience'} bgopacity={'bg-opacity-[90%]'}>
       
 
       <ExperienceLayout topic1={'Generation Thailand'} topic2={''} durationtime={'July 2023 - October 2023'} addresslearn={'Online , Thailand'}>
