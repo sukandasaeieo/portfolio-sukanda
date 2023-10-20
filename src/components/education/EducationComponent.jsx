@@ -4,7 +4,7 @@ import EducationLayout from "./EducationLayout"
 
 const EducationComponent = () => {
   return (
-    <LayoutComponent topic={'Education'} idcomponent={'education'} bgopacity={'bg-opacity-[98%]'}>
+    <LayoutComponent topic={'Education'} idcomponent={'education'} bgopacity={'bg-opacity-[90%]'}>
 
       <EducationLayout topic1={'Generation Thailand'} topic2={'Junior Software Developer Bootcamp (JSD)'} durationtime={'July 2023 - October 2023'} addresslearn={'Online , Thailand'}>
         <div className="text-white text-opacity-80 font-Incluesive-Sans text-[0.9rem] mt-[1rem] lg:mt-0 lg:text-[1rem] lg:pl-[2rem]">
