@@ -77,12 +77,12 @@ const ContactComponent = () => {
 
 
   return (
-    <LayoutComponent topic={'Contact'} idcomponent={'contact'} bgopacity={'bg-opacity-[98%]'}>
+    <LayoutComponent topic={'Contact'} idcomponent={'contact'} bgopacity={'bg-opacity-[90%]'}>
         {/* Label */}
         <p className=" text-white text-[0.9rem] lg:text-[1rem] pl-[0.5rem] text-opacity-80 font-Incluesive-Sans">Please feel free to contact me via the provided form or any other available link.</p>
 
         {/* Contact */}
-        <div className=" bg-[#18181b] rounded-2xl p-[1rem] flex flex-col-reverse sm:flex-row sm:justify-between items-center mt-[2rem] gap-y-[1rem] sm:gap-y-0  " >
+        <div className=" bg-[#29293d] rounded-2xl p-[1rem] flex flex-col-reverse sm:flex-row sm:justify-between items-center mt-[2rem] gap-y-[1rem] sm:gap-y-0  " >
 
             {/* Left Contact link  */}
             <section className=" sm:w-[40%] flex justify-center">
