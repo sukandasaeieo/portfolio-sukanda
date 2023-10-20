@@ -17,10 +17,10 @@ const App = () => {
       <NavbarComponent/>
       <IntroComponent/>
       <AboutComponent/>
-      <EducationComponent/>
-      <ExperienceComponent/>
       <SkillComponent/>
       <ProjectsComponent/>
+      <EducationComponent/>
+      <ExperienceComponent/>      
       <ContactComponent/>
 
     </div>
