@@ -30,7 +30,7 @@ const ProjectsComponent = () => {
   },[htmlskill ,cssskill , jsskill , reactskill , tailwindskill , crudskill , apiskill])
 
   return (
-    <LayoutComponent topic={'Projects'} idcomponent={'projects'} bgopacity={'bg-opacity-[96%]'}>
+    <LayoutComponent topic={'Projects'} idcomponent={'projects'} bgopacity={'bg-opacity-[94%]'}>
 
           {/* Filter Project */}
           <div className=" flex flex-col lg:flex-row lg:justify-between lg:items-center mb-[2rem]"> 
