@@ -5,7 +5,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 const CardProject = (props) => {
     const {topic , stack , responsive , image , isgif ,isvideo , repoGithub ,linksite} = props
   return (
-    <section className=' p-[1rem]  bg-[#18181b] bg-opacity-100 rounded-lg'>
+    <section className=' p-[1rem]  bg-[#2c2c46] bg-opacity-100 rounded-lg'>
         <div className={!isvideo ? "w-[250px] h-[200px] lg:w-[300px] lg:h-[200px]  overflow-hidden rounded-lg " :"w-[250px] lg:w-[300px] h-auto"}>
                 {!isvideo   ?   <img src={image} alt={image} className={isgif ?' h-full' :' hover:translate-y-[-50%] hover:cursor-pointer delay-150 duration-[3000ms] ease-in-out'} />
                             :   <video src={image} className='hover:cursor-pointer' loop onMouseOver={e => e.target.play()} onMouseOut={e => e.target.load()}>{topic}</video>
