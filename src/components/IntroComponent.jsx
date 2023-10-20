@@ -7,12 +7,12 @@ const IntroComponent = () => {
                 <div style={{backgroundImage: `url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2lhdnk4MmRqOGVydTExbm0xbThuNmFieTh1NjgyNjR4eXpsMG01dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif")` 
                             ,backgroundRepeat: 'no-repeat'                            
                             }}
-                        className=" w-[110%] h-[95vh] bg-cover bg-center  blur-[5px] absolute top-[-1rem] left-[-1rem] ">     
+                        className=" w-[110%] h-[95vh] bg-cover bg-center  blur-[15px] absolute top-[-1rem] left-[-1rem] ">     
                 </div>
             </div>
 
             {/* Filter Background */}
-            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40">
+            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70">
 
             </div>
 
@@ -28,7 +28,8 @@ const IntroComponent = () => {
                                     Hi, I am 
                                     <span className=" text-yellow-400"> &ldquo;Top&rdquo;</span> or  
                                     <span className=" text-yellow-400"> &ldquo;Siraphob Reanmanorom.&rdquo; </span>
-                                     a graduate in the field of Mechatronics engineering. I love coding and find it enjoyable.
+                                    <br />A graduate in the field of Mechatronics engineering. 
+                                    <br />I love coding and find it enjoyable.
                                 </p>
                             </div>
                         </section>            
