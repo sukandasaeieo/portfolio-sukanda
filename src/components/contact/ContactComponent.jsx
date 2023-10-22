@@ -53,7 +53,7 @@ const ContactComponent = () => {
 }
 
   const sendEmail = async () => {
-  const url = 'https://portfoliobackend-1xjn.onrender.com/sendmail'
+  // const url = 'https://portfoliobackend-1xjn.onrender.com/sendmail'
 
     const objsend = {
       namevisitor , 
@@ -82,17 +82,17 @@ const ContactComponent = () => {
         <p className=" text-white text-[0.9rem] lg:text-[1rem] pl-[0.5rem] text-opacity-80 font-Incluesive-Sans">Please feel free to contact me via the provided form or any other available link.</p>
 
         {/* Contact */}
-        <div className=" bg-[#29293d] rounded-2xl p-[1rem] flex flex-col-reverse sm:flex-row sm:justify-between items-center mt-[2rem] gap-y-[1rem] sm:gap-y-0  " >
+        <div className="  bg-fuchsia-950 rounded-2xl p-[1rem] flex flex-col-reverse sm:flex-row sm:justify-between items-center mt-[2rem] gap-y-[1rem] sm:gap-y-0  " >
 
             {/* Left Contact link  */}
             <section className=" sm:w-[40%] flex justify-center">
               <div className=" flex flex-col gap-y-[1rem]">
                 <span className=" text-center text-white text-opacity-70 hidden sm:block">Contact by</span>
                 <div className=" flex flex-wrap justify-center sm:justify-start sm:flex-col gap-y-[1rem] gap-x-[1rem] sm:gap-x-0">
-                <CardContact icon={<BsLinkedin className=" text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Linkedin'} linktarget={'https://www.linkedin.com/in/siraphob-reanmanorom/'}/>
-                <CardContact icon={<HiOutlineMail className="text-[1.5rem] sm:text-[1.1rem]"/>} nameicon={'Email'} linktarget={'mailto:siraphobtop95@gmail.com?subject=contact from Portfolio Siraphob'}/>
-                <CardContact icon={<BsGithub className=" text-[1.4rem] sm:text-[1.1rem]"/>} nameicon={'GitHub'} linktarget={'https://github.com/Siraphob1'}/>
-                <CardContact icon={<SiFrontendmentor className="text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Frontend Mentor'} linktarget={'https://www.frontendmentor.io/profile/Siraphob1'}/>
+                <CardContact icon={<BsLinkedin className=" text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Linkedin'} linktarget={'https://www.linkedin.com/in/sukanda-saeieo/'}/>
+                {/* <CardContact icon={<HiOutlineMail className="text-[1.5rem] sm:text-[1.1rem]"/>} nameicon={'Email'} linktarget={'mailto:siraphobtop95@gmail.com?subject=contact from Portfolio Siraphob'}/> */}
+                <CardContact icon={<BsGithub className=" text-[1.4rem] sm:text-[1.1rem]"/>} nameicon={'GitHub'} linktarget={'https://github.com/sukandasaeieo'}/>
+                {/* <CardContact icon={<SiFrontendmentor className="text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Frontend Mentor'} linktarget={'https://www.frontendmentor.io/profile/Siraphob1'}/> */}
                 <CardContact icon={<TbReportSearch className="text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Resume'} linktarget={'https://www.canva.com/design/DAFtFu-6wlE/o5644MlmDumnrkagwFoyRg/edit?utm_content=DAFtFu-6wlE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'}/>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const ContactComponent = () => {
 
                 {/* Button */}
                 <section className=" flex flex-col lg:flex-row lg:items-center gap-x-[1rem] gap-y-[0.5rem] sm:gap-y-0 text-[0.9rem] sm:text-[1rem]">
-                <button type='submit' className="btn btn-neutral hover:brightness-[170%]  max-w-[200px] normal-case mt-[1rem] sm:mt-0" onClick={()=>setIscliked(true)}>Send Message <LuSend className=" text-[1.2rem]"/></button>
+                <button type='submit' className=" bg-purple-950 btn btn-neutral hover:scale-110 hover:brightness-[170%]  max-w-[200px] normal-case mt-[1rem] sm:mt-0" onClick={()=>setIscliked(true)}>Send Message <LuSend className=" text-[1.2rem]"/></button>
                 
                 {/* Show result */}
                 {!isclicked ? null 

@@ -3,7 +3,7 @@
 const ExperienceLayout = (props) => {
     const {topic1 , topic2 , durationtime , addresslearn , children} =props
   return (
-    <section className=" mt-[2rem]  hover:bg-white hover:bg-opacity-10 hover:cursor-pointer p-[1rem] rounded-xl border border-[#413f3f]">
+    <section className=" mt-[2rem]  hover:bg-white hover:bg-opacity-10 hover:cursor-pointer p-[1rem] rounded-xl border border-[#413f3f]  bg-fuchsia-950">
         <div className=" flex justify-between text-white     font-Incluesive-Sans">
             {/* Left */}
             <section >

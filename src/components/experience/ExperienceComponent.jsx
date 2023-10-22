@@ -6,45 +6,44 @@ const ExperienceComponent = () => {
   return (
     <LayoutComponent topic={'Experience'} idcomponent={'experience'} bgopacity={'bg-opacity-[90%]'}>
       
-
-      <ExperienceLayout topic1={'Generation Thailand'} topic2={''} durationtime={'July 2023 - October 2023'} addresslearn={'Online , Thailand'}>
-        <p>- Challange: <span className=" ml-[0.5rem]">Colmar Academy / Find your hat / React Assessment</span></p>
-      </ExperienceLayout>
-
-      <ExperienceLayout topic1={'Self-Learning FullStack Developer'} topic2={''} durationtime={'Febuary 2023 - July 2023'} addresslearn={'Online , Thailand'}>
-        <p>- Technical Skills: <span className=" ml-[0.5rem]">HTML5 / CSS3 / JS / Boostrap5 / Tailwind / ReactJS / NodeJS / ExpressJS / MongoDB / NextJS</span></p>
-        <p>- Challange: <span className=" ml-[0.5rem]">Frontend Mentor</span></p>
-      </ExperienceLayout>
-
-      <ExperienceLayout topic1={'Self-Learning Game Developer '} topic2={''} durationtime={'May 2022 - February 2023'} addresslearn={'Online , Thailand'}>
-        <p>- Technical Skills: <span className=" ml-[0.5rem]">C# / Unity</span></p>
-        <p>- Challange: <span className=" ml-[0.5rem]">Create Game RPG 3D</span></p>
-          <div className=" pl-[2rem]">
-            <p>- NPC (Buy / Sell)</p>
-            <p>- Player (Move / Inventory / Shortcut F1-F9 / Tap status)</p>
-            <p>- Monster (Spawn / Move / Response attack / DropItem / Check name)</p>
-          </div>
-      </ExperienceLayout>
-
-      <ExperienceLayout topic1={'Thai PLC Center'} topic2={'Cooperative Education'} durationtime={'November 2021 - March 2022'} addresslearn={'Ayutthaya , Thailand'}>
-        <p>- Assemble and write a program for the training set PLC</p>
-        <p>- Write program Robotic Arm spray color product by PLC</p>
-        <p>- Project create window app to control Robotic Arm by Visual Studio C#
-             and Forward kinematic
-        </p>        
+      <ExperienceLayout topic1={'Krissana Engineering & Supply'} topic2={'Administrate Officer'} durationtime={'December 2021 - March 2023'} addresslearn={'Bangkok , Thailand'}>
+        <p>- Monitoring payments and preparing invoices and purchase orders</p>
+        <p>- Conducts meetings as required to resolve questions or to discuss changes proposed by the Owner or Contractor</p>
+        <p>- Provide technical assistance and answer inquiries for professional staff, contractors and the general public</p>  
+        <p>- Prepare and maintain reports, forms, spreadsheets, databases and related correspondence to ensure compliance with contract documents and specifications</p>      
       </ExperienceLayout>
       
-      {/* Prince of Songkla University */}
-      <ExperienceLayout topic1={'Extracurricular activity'} topic2={'[2020] Prince of Songkla University'} durationtime={''} addresslearn={'Songkla , Thailand'}>
-        <p>- Inventing a Land leveling Robot &ldquo; 2020 Smart Agricultural Robot Contest &rdquo;</p>           
-        <p>- President of a PSU Shooting Club.</p>           
-        <p>- Collaborated with Student Organization - Administrative Organization in the event &ldquo; Opening the world of activities &rdquo; and &ldquo; ASEAN night &rdquo;</p>           
+      <ExperienceLayout topic1={'Digital Economy Promotion Agency'} topic2={'Customer Relations Officer'} durationtime={'October 2020 - November 2021'} addresslearn={'Bangkok , Thailand'}>
+        <p>- Offering assistance to customers to ensure they find the right product/service</p>
+        <p>- Communicating with customers by email, phone, and face-to-face</p>
+        <p>- Refer customers to senior staff when necessary</p> 
+        <p>- Learning about company's products/services and remaining up to date with any changes</p>    
+        <p>- Investigating and solving customer problems</p>
+        <p>- Meeting with management to discuss possible improvements to the company's customer service</p>  
       </ExperienceLayout>
 
-      <ExperienceLayout topic1={''} topic2={'[2019] Prince of Songkla University'} durationtime={''} addresslearn={'Songkla , Thailand'}>
-        <p>- Planning a Shooting club activity project.</p>           
-        <p>- A staff member in an orientation event for a new student at the university -Staff in the basic shooting training project</p>           
-        <p>- A staff member of PSU Robotics Competition 2019 that included line following robot and Sumo robot in the event Engineering Funfair</p>           
+      <ExperienceLayout topic1={'Lucky Global Corporation (Thailand)'} topic2={'Executive Secretary'} durationtime={'2016 - 2017'} addresslearn={'Bangkok , Thailand'}>
+        <p>- Managing daily administrative functions conferences etc.</p>
+        <p>- Attend meetings and keep minutes</p>
+        <p>- Receive and screen phone calls and redirect them when appropriate</p> 
+        <p>- Handle and prioritize all outgoing or incoming correspondence (e-mail, letters, packages etc.)</p>  
+        <p>- Make travel arrangements for executives</p>    
+        <p>- Handle confidential documents ensuring they remain secure</p> 
+      </ExperienceLayout>
+
+      <ExperienceLayout topic1={'NEC Corporation (Thailand)'} topic2={'Cooperative Education'} durationtime={'2015 - 2016'} addresslearn={'Bangkok , Thailand'}>
+        <p>- Welcomes visitors by greeting them, in person or on the telephone and answering or referring inquiries</p>
+        <p>- Directs visitors by maintaining employee and department directories</p>
+        <p>- Maintains safe and clean reception area by complying with procedures, rules, and regulations maintains continuity among work teams by documenting and communicating actions, irregularities, and continuing needs</p>        
+        <p>- Contributes to team effort by accomplishing related results as needed</p>
+      </ExperienceLayout>
+
+
+      <ExperienceLayout topic1={'Sawasdee Hotel Banglumpoo Inn 2'} topic2={'Receptionist'} durationtime={'2014 - 2015'} addresslearn={'Bangkok , Thailand'}>
+        <p>- Welcome and Check in- out Guests</p>
+        <p>- Handle Guest Inquiries and Complaints</p>
+        <p>- Answer Phones</p>    
+        <p>- Process Payments</p>    
       </ExperienceLayout>
 
     </LayoutComponent>
