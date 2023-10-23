@@ -90,10 +90,8 @@ const ContactComponent = () => {
                 <span className=" text-center text-white text-opacity-70 hidden sm:block">Contact by</span>
                 <div className=" flex flex-wrap justify-center sm:justify-start sm:flex-col gap-y-[1rem] gap-x-[1rem] sm:gap-x-0">
                 <CardContact icon={<BsLinkedin className=" text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Linkedin'} linktarget={'https://www.linkedin.com/in/sukanda-saeieo/'}/>
-                {/* <CardContact icon={<HiOutlineMail className="text-[1.5rem] sm:text-[1.1rem]"/>} nameicon={'Email'} linktarget={'mailto:siraphobtop95@gmail.com?subject=contact from Portfolio Siraphob'}/> */}
                 <CardContact icon={<BsGithub className=" text-[1.4rem] sm:text-[1.1rem]"/>} nameicon={'GitHub'} linktarget={'https://github.com/sukandasaeieo'}/>
-                {/* <CardContact icon={<SiFrontendmentor className="text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Frontend Mentor'} linktarget={'https://www.frontendmentor.io/profile/Siraphob1'}/> */}
-                <CardContact icon={<TbReportSearch className="text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Resume'} linktarget={'https://www.canva.com/design/DAFtFu-6wlE/o5644MlmDumnrkagwFoyRg/edit?utm_content=DAFtFu-6wlE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'}/>
+                <CardContact icon={<TbReportSearch className="text-[1.2rem] sm:text-[1.1rem]"/>} nameicon={'Resume'} linktarget={''}/>
                 </div>
               </div>
             </section>
