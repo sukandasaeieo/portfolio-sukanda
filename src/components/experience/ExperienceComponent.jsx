@@ -31,7 +31,7 @@ const ExperienceComponent = () => {
         <p>- Handle confidential documents ensuring they remain secure</p> 
       </ExperienceLayout>
 
-      <ExperienceLayout topic1={'NEC Corporation (Thailand)'} topic2={'Cooperative Education'} durationtime={'2015 - 2016'} addresslearn={'Bangkok , Thailand'}>
+      <ExperienceLayout topic1={'NEC Corporation (Thailand)'} topic2={'Receptionist & Operator'} durationtime={'2015 - 2016'} addresslearn={'Bangkok , Thailand'}>
         <p>- Welcomes visitors by greeting them, in person or on the telephone and answering or referring inquiries</p>
         <p>- Directs visitors by maintaining employee and department directories</p>
         <p>- Maintains safe and clean reception area by complying with procedures, rules, and regulations maintains continuity among work teams by documenting and communicating actions, irregularities, and continuing needs</p>        
