@@ -9,7 +9,7 @@ const ExperienceLayout = (props) => {
             <section >
               <h3 className=" text-[1.2rem] lg:text-[1.4rem] font-bold">{topic1}</h3>
               { topic2 != ''    ? <h4 className="text-[0.9rem] lg:text-[1rem] text-yellow-400 text-opacity-90">{topic2}</h4> 
-                                : <h4 className=" hidden"></h4>
+                                : <h4 className="hidden">.</h4>
               } 
             </section>
 
