@@ -13,12 +13,10 @@ const NavbarComponent = () => {
             {/* Right */}
             <section className=" ">
                 <ul className="flex gap-x-[1rem] list-none [&>li]:px-[0.5rem] [&>li]:py-[0.2rem] [&>li]:rounded-lg text-white">
-                    <li className=" hover:bg-[#515a59] "><a href="#about">About</a></li>
-                    <li className=" hover:bg-[#515a59] "><a href="#skills">Skills</a></li>
-                    <li className=" hover:bg-[#515a59] "><a href="#projects">Projects</a></li>
-                    <li className=" hover:bg-[#515a59] "><a href="#education">Education</a></li>
-                    <li className=" hover:bg-[#515a59] "><a href="#experience">Experience</a></li>
-                    <li className=" hover:bg-[#515a59] "><a href="#contact">Contact</a></li>
+                    <li className=" hover:bg-[#515a59] "><a href="#About">About</a></li>
+                    <li className=" hover:bg-[#515a59] "><a href="#Activities">Activities</a></li>
+                    <li className=" hover:bg-[#515a59] "><a href="#Review">Review</a></li>
+                    <li className=" hover:bg-[#515a59] "><a href="#Contact">Contact</a></li>
                 </ul>
             </section>
         </section>
