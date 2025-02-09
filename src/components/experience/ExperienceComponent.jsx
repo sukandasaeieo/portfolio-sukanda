@@ -11,7 +11,7 @@ const ExperienceComponent = () => {
       <ExperienceLayout
         topic1={"W&J Engineering"}
         topic2={"IT Project Coordinator"}
-        durationtime={"June 2024 - November 2024"}
+        durationtime={"November 2023 - November 2024"}
         addresslearn={"Bangkok , Thailand"}
       >
         <p>
